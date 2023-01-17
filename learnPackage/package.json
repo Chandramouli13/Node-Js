@@ -1,0 +1,17 @@
+{
+  "name": "learnpackage",
+  "version": "1.0.0",
+  "description": "this is about the node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "developer cm",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}

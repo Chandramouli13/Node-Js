@@ -1,0 +1,89 @@
+
+//////////// Node Js ////////////////
+
+> Node is a backend
+> Single Threaded , asynchronous , Non blocking I/O - input/output
+> Open Source - Anybody can contribute to development.
+> npm registry - (node package manager)  - it is the biggest registry.
+      registry - All Third party packages are available in this npm registry.
+
+Meanings are :
+
+    > Single Threaded means - 
+
+    > All the requests come on same place.
+    It follows the Single-Threaded with Event Loop Model. Node JS Processing model mainly inspired by JavaScript Event-based model with JavaScript callback mechanism. Because of which Node.js can handle more concurrent client requests with ease. The event loop is the heart of the Node.js processing model.
+    > Whole Process is happening in a single thread.
+    > Each request got assigned to the Event. Assigned on same thread.
+    > Whenever request completed we will get the response.
+    > The response is referred as Callback.
+
+    > Synchronous means -
+    Example : An ATM 
+
+    The person goes inside ATM room
+    The rest will be outside in the queue waiting to enter accordingly 
+    This is called Synchronous and blocking.
+    Synchronous - The event will happen one after another.
+    Blocking - If the person inside ATM room takes too long & the persons outside in the  queue will be blocked.
+    If blocking happen - all other requests are blocked.
+    If someone go out of the queue someone will take their position.
+
+
+    > Asynchronous means -
+    Example : Dominos
+
+    The person came into the Dominos and ordered the Pizza
+    They will say that you have token number and the token number will be displayed on the screen.
+
+    And another person came and ordered ColdDrink (CocoCola)  
+    The coke is ready and they will give it to him.
+    They won't wait for the previous person Pizza to ready and after they give to coke person.
+    In mean while the Pizza is processing happening behind the scene.
+    And the cold_drink is already available and another person will get quickly.
+    This is called Asynchronous and Non blocking.
+    Asynchronous - Multiple requests are getting processed parallelly
+                   without blocking other requests.
+
+
+According to this scenarios which method is best to handle customers ?
+> Obviously Dominos method is better than ATM.
+> So Python and Java is like ATM. and NodejS is like Dominos method.
+
+
+//////// This is why Node is preferred more than other languages in backend. ///////////
+
+
+
+First file for JavaScript framework :
+///////////////  Package.json ///////////////
+> This is the entry point to applications.
+> It contains the metaData (name,version,description)
+> All the packages we are using in app
+> Script (start, build, test)
+
+How to generate this file :
+/// step to create package.json
+** NodejS must be installed in laptop
+> go inside the folder (we created application folder in (NodeJs Edureka - inside learnPackage)) using gitbash/cmd.
+> npm init
+
+> Answer all questions
+
+> Type "yes" finally
+
+>>>>>>> package.json is created as you can see in the folder.
+we can change anything in this package.json.  
+
+>>>>>>> along with the package.json - package-lock.json is created if you check inside there are dependencies and that is called dependency tree. No need to change anything.
+
+//// step to install package
+> go inside the folder (we created application folder(NodeJs Edureka - inside learnPackage)) using gitbash/cmd.
+
+> npm i packageName /(or) npm install packageName. lets say example (npm i cors)
+
+>>>>>>> node_modules folder is created inside cors folder is created and other folders inside are also created (object-assign & vary) those are child dependencies. because this package is made by someone.
+
+>>>>>>> we never transport node_modules folder as it is very heavy folder contains more content and to ignore this when we push the code we use - .gitignore file inside learnPackage folder - inside this file we type node_modules. This will be ignored when we push the code.
+
+>>>>>>> Readme.md (md - markdown) file create inside learnPackage folder for detail description. 
